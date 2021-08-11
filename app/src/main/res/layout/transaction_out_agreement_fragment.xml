@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/transaction_out_agreement_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/spacing_medium"
+        android:layout_above="@+id/transaction_in_plate_next"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:theme="@style/Button.Success"
+        android:id="@+id/transaction_in_plate_next"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:text="Avançar"/>
+
+</RelativeLayout>

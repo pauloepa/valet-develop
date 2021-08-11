@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:showIn="@layout/config_printer_activity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/spacing_large"
+        android:layout_above="@+id/config_printer_bottom"
+        android:orientation="vertical">
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/config_printer_ip_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="IP">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number|numberDecimal"
+                android:digits="0123456789."
+                android:singleLine="true"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Informe o endereço IP da impressora Bematech MP-4200 TH.\nApós informar o IP, clique em testar para certificar que a impressora está comunicando corretamente."/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/config_printer_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:background="#fff"
+        android:padding="@dimen/spacing_medium">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/config_printer_test"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Testar"
+            android:theme="@style/Button"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/config_printer_finish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="Concluir"
+            android:theme="@style/Button.Success"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

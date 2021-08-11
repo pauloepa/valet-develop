@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/transaction_out_ticket"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:text="1234"
+        android:textSize="@dimen/input_plate_size"
+        android:textColor="@color/text_secondary"
+        android:textStyle="bold"/>
+
+    <RelativeLayout
+        android:id="@+id/transaction_out_ticket_keyboard"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/transaction_out_ticket"
+        android:layout_above="@+id/transaction_out_bottom"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <androidx.gridlayout.widget.GridLayout
+                android:id="@+id/transaction_out_ticket_grid_number"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                app:columnCount="3"
+                app:orientation="horizontal">
+
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:theme="@style/Button"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    app:layout_columnWeight="1"
+                    app:layout_rowWeight="1"
+                    android:gravity="center"
+                    android:text="1"
+                    android:textSize="@dimen/letter_small"/>
+                <androidx.appcompat.widget.AppCompatButton
+                    android:theme="@style/Button"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    app:layout_columnWeight="1"
+                    app:layout_rowWeight="1"
+                    android:gravity="center"
+                    android:text="2"
+                    android:textSize="@dimen/letter_small"/>
+                <androidx.appcompat.widget.AppCompatButton
+                    android:theme="@style/Button"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    app:layout_columnWeight="1"
+                    app:layout_rowWeight="1"
+                    android:gravity="center"
+                    android:text="3"
+                    android:textSize="@dimen/letter_small"/>
+                <androidx.appcompat.widget.AppCompatButton
+                    android:theme="@style/Button"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    app:layout_columnWeight="1"
+                    app:layout_rowWeight="1"
+                    android:gravity="center"
+                    android:text="4"
+                    android:textSize="@dimen/letter_small"/>
+                <androidx.appcompat.widget.AppCompatButton
+                    android:theme="@style/Button"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    app:layout_columnWeight="1"
+                    app:layout_rowWeight="1"
+                    android:gravity="center"
+                    android:text="5"
+                    android:textSize="@dimen/letter_small"/>
+                <androidx.appcompat.widget.AppCompatButton
+                    android:theme="@style/Button"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    app:layout_columnWeight="1"
+                    app:layout_rowWeight="1"
+                    android:gravity="center"
+                    android:text="6"
+                    android:textSize="@dimen/letter_small"/>
+                <androidx.appcompat.widget.AppCompatButton
+                    android:theme="@style/Button"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    app:layout_columnWeight="1"
+                    app:layout_rowWeight="1"
+                    android:gravity="center"
+                    android:text="7"
+                    android:textSize="@dimen/letter_small"/>
+                <androidx.appcompat.widget.AppCompatButton
+                    android:theme="@style/Button"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    app:layout_columnWeight="1"
+                    app:layout_rowWeight="1"
+                    android:gravity="center"
+                    android:text="8"
+                    android:textSize="@dimen/letter_small"/>
+                <androidx.appcompat.widget.AppCompatButton
+                    android:theme="@style/Button"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    app:layout_columnWeight="1"
+                    app:layout_rowWeight="1"
+                    android:gravity="center"
+                    android:text="9"
+                    android:textSize="@dimen/letter_small"/>
+                <androidx.appcompat.widget.AppCompatButton
+                    android:theme="@style/Button"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    app:layout_columnWeight="1"
+                    app:layout_rowWeight="1"
+                    android:gravity="center"
+                    app:layout_column="1"
+                    android:text="0"
+                    android:textSize="@dimen/letter_small"/>
+
+
+            </androidx.gridlayout.widget.GridLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/transaction_out_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_clear_height"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/transaction_out_ticket_clear"
+            android:theme="@style/Button"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="@dimen/button_clear_size"
+            android:gravity="center"
+            android:text="Limpar"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/transaction_out_ticket_next"
+            android:theme="@style/Button.Success"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="@dimen/button_clear_size"
+            android:gravity="center"
+            android:text="Avançar"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

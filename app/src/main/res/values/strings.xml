@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Valet</string>
+
+    <!-- Home Menu -->
+
+    <string name="menu_car_in">ENTRADA</string>
+    <string name="menu_car_out">SAÍDA</string>
+    <string name="menu_setup">CONFIGURAÇÕES</string>
+    <string name="menu_reports">RELATÓRIOS</string>
+
+    <!-- Home Menu -->
+
+    <!-- Transaction -->
+
+    <string name="transaction_car">Carro</string>
+    <string name="transaction_motor">Moto</string>
+    <string name="transaction_suv">Camionete</string>
+
+    <!-- Transaction -->
+
+    <string name="message_barcode_not_match">Desculpe, esse código não é compátivel.\nTente novamente!</string>
+    <string name="message_barcode_data_not_found">Nenhum dado encontrado nesse código!</string>
+    <string name="company_name">L Leal Valim bortolotti</string>
+    <string name="company_document">CNPJ: 29.638.235/0001-95</string>
+    <string name="company_phone">(44) 9 9151-2292</string>
+    <string name="company_address">Av. Getulio Vargas, 263 - Maringá - Paraná</string>
+    <string name="company_observation">Horário de Atendimento\nSegunda à Sexta: 08:00 as 18:00\nSábados: 09:00 às 13:00</string>
+
+</resources>

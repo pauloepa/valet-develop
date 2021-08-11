@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#E43333</color>
+    <color name="colorPrimaryDark">#A51616</color>
+    <color name="colorAccent">#2B2D42</color>
+
+    <color name="button_success">#499F68</color>
+    <color name="button_error">#a14c48</color>
+    <color name="button_default">#7A7978</color>
+
+    <color name="background">#F2F2F2</color>
+    <color name="text_primary">#2B2D42</color>
+    <color name="text_secondary">#41494D</color>
+    <color name="text_tertiary">#FFFFFF</color>
+    <color name="text_info">#848C8F</color>
+
+</resources>

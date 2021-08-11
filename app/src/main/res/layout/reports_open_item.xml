@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:background="@color/cardview_light_background"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:padding="@dimen/spacing_medium">
+
+    <RelativeLayout
+        android:layout_width="40dp"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/reports_open_client_type"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="@dimen/spacing_medium"
+            android:paddingRight="@dimen/spacing_medium"
+            android:gravity="center"
+            android:text="M"
+            android:textSize="@dimen/text_size_xlarge"
+            android:textColor="@color/text_secondary"
+            android:background="@color/button_success"
+            android:textStyle="bold"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:paddingLeft="@dimen/spacing_medium"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ticket:"/>
+
+            <TextView
+                android:id="@+id/reports_open_ticket"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/spacing_medium"
+                android:layout_weight="0.6"
+                android:text="1"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Placa:"/>
+
+            <TextView
+                android:id="@+id/reports_open_plate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/spacing_medium"
+                android:layout_weight="1"
+                android:text="AAA-0000"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_medium"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Marca:"/>
+
+            <TextView
+                android:id="@+id/reports_open_brand"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/spacing_medium"
+                android:layout_weight="1"
+                android:text="AUDI"
+                android:lines="1"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cor:"/>
+
+            <TextView
+                android:id="@+id/reports_open_color"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/spacing_medium"
+                android:layout_weight="1"
+                android:text="VERMELHO"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/reports_open_close"
+        android:theme="@style/Button.Danger"
+        android:layout_width="65dp"
+        android:layout_height="match_parent"
+        android:layout_marginRight="3dp"
+        android:gravity="center"
+        android:text="Saída"/>
+
+</LinearLayout>
