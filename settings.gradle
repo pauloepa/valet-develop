@@ -1,1 +1,1 @@
-include ':app', ':bematechprintmanager'
+include ':app', ':bematechprintmanager', ':BottomDialog'

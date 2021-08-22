@@ -59,7 +59,6 @@ dependencies {
     implementation 'com.squareup.okhttp3:logging-interceptor:3.12.1'
 
     implementation 'com.eftimoff:android-pathview:1.0.8@aar'
-    implementation 'rebus:bottom-dialog:0.0.5'
     implementation 'me.dm7.barcodescanner:zxing:1.9'
     implementation 'com.anthonycr.grant:permissions:1.1.2'
     implementation 'com.wdullaer:materialdatetimepicker:2.5.0'
@@ -69,4 +68,5 @@ dependencies {
     }
 
     implementation project(':bematechprintmanager')
+    implementation project(':BottomDialog')
 }
